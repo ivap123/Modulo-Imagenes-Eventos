@@ -355,3 +355,41 @@ body {
     text-align: center; /* Centra el texto dentro del botón */
     border-radius: 5px; /* Bordes redondeados */
 }
+
+
+@media (max-width: 768px) { 
+    #sidebarCartas {
+        flex-direction: column;
+        flex-wrap: nowrap; 
+        overflow-y: auto; 
+    }
+    
+    .sidebar-carta {
+        width: 100%; 
+        max-width: 120px; 
+        margin: 0 auto; 
+    }
+   
+}
+@media (max-width: 480px) { /* Para celulares */
+    .sidebar {
+        width: 180px; /* Más estrecho en pantallas pequeñas */
+    }
+    
+    h3 {
+        font-size: 14px; /* Texto más pequeño */
+    }
+    
+    #verTodo {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    
+    .sidebar-carta {
+        max-width: 100px; 
+    }
+    .contenido-desplazado {
+        margin-left: 200px; 
+
+    }
+        }
